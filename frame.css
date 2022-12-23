@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+.main{
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+img{
+    z-index: 1;
+}
+.main::after{
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 490px;
+    background-color: rgb(255, 255, 255);
+    border: 15px solid #343a40;
+    border-radius: 6px 0 0 6px;
+    border-right: transparent;
+    left: 0;
+}
+.main::before{
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 490px;
+    background-color: #343a40;
+    border: 15px solid white;
+    border-left: transparent;
+    right: 0;
+}
